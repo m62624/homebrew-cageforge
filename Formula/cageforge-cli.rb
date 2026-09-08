@@ -5,21 +5,21 @@ class CageforgeCli < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/m62624/cageforge/releases/download/v0.1.0/cageforge-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "cd46c236f666f8da7f947faa20ea64a0ad74d9e3e8c712ca4cb27c8c44f0652c"
+      sha256 "b18aae59619a289426f5109653e6d9534c138fc1bf8796104228bffa30b939f8"
     end
     if Hardware::CPU.intel?
       url "https://github.com/m62624/cageforge/releases/download/v0.1.0/cageforge-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "8b18102411d5a10b179f1e283d088626be60e405c961632248ec9f0944d3cd33"
+      sha256 "4318404a54a84c5dd660b82ebecb4384de6fcfbbd12af94b5349c758c2111cfe"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/m62624/cageforge/releases/download/v0.1.0/cageforge-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "103c268536dcf93c72cf0d5d6b7732085036128b111bc644afb627ec61661810"
+      sha256 "205e2e319c369c152db4bcc9948d0cc7ddd420064b3c93d690f56e1f88de7695"
     end
     if Hardware::CPU.intel?
       url "https://github.com/m62624/cageforge/releases/download/v0.1.0/cageforge-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "40119b46d92b2252dd30f974d46bf93195b7276a074b9b9b4678476a87a52d50"
+      sha256 "926a433b5a678cda817e595aead5a5b318ce7439391558707c247e3197117ed8"
     end
   end
   license "Apache-2.0"
