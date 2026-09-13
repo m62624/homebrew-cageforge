@@ -1,25 +1,25 @@
 class CageforgeCli < Formula
-  desc "Command-line adapter for running programs through Cageforge sandboxes"
+  desc "Command-line tool for running untrusted programs in Cageforge sandboxes"
   homepage "https://github.com/m62624/cageforge"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/m62624/cageforge/releases/download/v0.1.0/cageforge-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "b18aae59619a289426f5109653e6d9534c138fc1bf8796104228bffa30b939f8"
+      url "https://github.com/m62624/cageforge/releases/download/v0.2.0/cageforge-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "c1e020039eb3bb3e90c3ad84c72149d24ef1d3324d2dd90534145d6b788d8f75"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/m62624/cageforge/releases/download/v0.1.0/cageforge-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "4318404a54a84c5dd660b82ebecb4384de6fcfbbd12af94b5349c758c2111cfe"
+      url "https://github.com/m62624/cageforge/releases/download/v0.2.0/cageforge-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "0748a6e8c564038210fb41d34779c5ad28ce638542138f49c11ee69f11b0a945"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/m62624/cageforge/releases/download/v0.1.0/cageforge-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "205e2e319c369c152db4bcc9948d0cc7ddd420064b3c93d690f56e1f88de7695"
+      url "https://github.com/m62624/cageforge/releases/download/v0.2.0/cageforge-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "7e0d747998bf3762b9d62bffc637b112e1cdb3fd0b5d1b0ccf3087c4cfe3c666"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/m62624/cageforge/releases/download/v0.1.0/cageforge-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "926a433b5a678cda817e595aead5a5b318ce7439391558707c247e3197117ed8"
+      url "https://github.com/m62624/cageforge/releases/download/v0.2.0/cageforge-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "ebf030a1666d2d03387067935f8e520839c18f5446c263b0a61426f43abdcb1c"
     end
   end
   license "Apache-2.0"
