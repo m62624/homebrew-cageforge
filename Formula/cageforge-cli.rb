@@ -1,25 +1,25 @@
 class CageforgeCli < Formula
   desc "Command-line tool for running untrusted programs in Cageforge sandboxes"
   homepage "https://github.com/m62624/cageforge"
-  version "0.3.0"
+  version "0.4.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/m62624/cageforge/releases/download/v0.3.0/cageforge-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "269e32a0791f9a0e4bd4739b1350ccb31e17b9f8e4361cf6706f56a199dc5ec3"
+      url "https://github.com/m62624/cageforge/releases/download/v0.4.0/cageforge-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "8829fe7be9eb09992f0a2d88a473e3fa22c992f5a7d55bd23cdaaa38b9f6bf69"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/m62624/cageforge/releases/download/v0.3.0/cageforge-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "90c76000ec62ceb672d355c1b5e08bb1bb8986fd26448ac73d86477720c9a174"
+      url "https://github.com/m62624/cageforge/releases/download/v0.4.0/cageforge-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "1e3472899e4cf4148eb0a24aebecdc5c99f0c21170d55e609687a94c0137a027"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/m62624/cageforge/releases/download/v0.3.0/cageforge-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "996d38814f7d2b9733997b17befc7bfebc379a506d471725891b8559876dfc31"
+      url "https://github.com/m62624/cageforge/releases/download/v0.4.0/cageforge-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "f48d49cc9a4fcf9ed0b7f28c066d7131019934fab2e41052b68375e130a2f148"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/m62624/cageforge/releases/download/v0.3.0/cageforge-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "493ccef22830d4248db5e68ea0a6968f80c3d1eba893fe16476bc84bdf16fa6a"
+      url "https://github.com/m62624/cageforge/releases/download/v0.4.0/cageforge-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "1a36869d3f657e5a81fb2b9507be8cc800b018172246076e20f134f348a9d651"
     end
   end
   license "Apache-2.0"
